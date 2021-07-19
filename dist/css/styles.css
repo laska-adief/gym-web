@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+header {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url(../../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+header .layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  opacity: 20%;
+}
+
+header nav {
+  height: 10vh;
+  padding-top: 1rem;
+}
+
+header nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .container .logo img {
+  width: 60px;
+  opacity: 0.8;
+  -webkit-transition: 0.3 ease-in-out;
+  transition: 0.3 ease-in-out;
+}
+
+header nav .container .logo img:hover {
+  opacity: 1;
+}
+
+header nav .container .menuBtn {
+  color: #979797;
+  font-size: 2rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+header nav .container .menuBtn:hover {
+  color: #fff;
+}
+
+header nav .container .menuBtn .fa-times {
+  display: none;
+}
+
+header nav .container .menuBtn.active .fa-times {
+  display: block;
+}
+
+header nav .container .menuBtn.active .fa-th {
+  display: none;
+}
+
+header nav .container .links {
+  display: inline-block;
+  min-width: 100px;
+  position: absolute;
+  top: 4.5rem;
+  right: 0;
+  z-index: 2;
+  display: none;
+  text-align: right;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header nav .container .links .link a {
+  display: inline-block;
+  color: #979797;
+  margin-bottom: 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header nav .container .links .link a:hover {
+  color: #fff;
+}
+
+header nav .container .links.active {
+  display: block;
+  position: absolute;
+}
+
+header .hero {
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #979797;
+  font-family: "Orbitron", sans-serif;
+}
+
+header .hero-subtext {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+
+header .hero-text {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #ce0000;
+  opacity: 80%;
+}
+
+header .hero .cta {
+  margin-top: 3.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.75);
+  color: #979797;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+  border: 3px solid #979797;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+header .hero .cta:hover {
+  background: #ce0000;
+  color: #fff;
+  border: 3px solid #fff;
+}
+
+header .hero .socmed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  left: 0;
+  bottom: 2.5rem;
+}
+
+header .hero .socmed a {
+  color: #979797;
+  font-size: 1.2rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+header .hero .socmed a:hover {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  header nav .container .logo img {
+    width: 100px;
+  }
+  header nav .container .menuBtn {
+    font-size: 3rem;
+  }
+  header nav .container .links {
+    top: 6.5rem;
+  }
+  header nav .container .links .link a {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  header .hero-subtext {
+    font-size: 3.75rem;
+  }
+  header .hero-text {
+    font-size: 8rem;
+  }
+  header .hero .cta {
+    font-size: 1.5rem;
+  }
+  header .hero .socmed {
+    gap: 1.5rem;
+    bottom: 4.5rem;
+  }
+  header .hero .socmed i {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  header {
+    background-position: center 80%;
+  }
+  header nav .container .menuBtn {
+    display: none;
+  }
+  header nav .container .links {
+    position: inherit;
+    -webkit-transform: inherit;
+            transform: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 2rem;
+  }
+  header .hero-subtext {
+    font-size: 4.75rem;
+  }
+  header .hero-text {
+    font-size: 8.5rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  header {
+    background-position: center 90%;
+  }
+  header nav .container .links {
+    gap: 6.25rem;
+  }
+  header .hero-subtext {
+    font-size: 6.25rem;
+  }
+  header .hero-text {
+    font-size: 12.25rem;
+  }
+  header .hero .cta {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

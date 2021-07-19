@@ -1,0 +1,18 @@
+body {
+  font-family: $font-body;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+  position: relative;
+}

@@ -1,0 +1,100 @@
+@media screen and(min-width:768px) {
+  header {
+    nav {
+      & .container {
+        .logo img {
+          width: 100px;
+        }
+        .menuBtn {
+          font-size: 3rem;
+        }
+        .links {
+          top: 6.5rem;
+
+          .link a {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+          }
+        }
+      }
+    }
+    .hero {
+      &-subtext {
+        font-size: 3.75rem;
+      }
+
+      &-text {
+        font-size: 8rem;
+      }
+
+      .cta {
+        font-size: 1.5rem;
+      }
+
+      .socmed {
+        gap: 1.5rem;
+        bottom: 4.5rem;
+
+        & i {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width:1280px) {
+  header {
+    background-position: center 80%;
+
+    nav {
+      & .container {
+        .menuBtn {
+          display: none;
+        }
+        .links {
+          position: inherit;
+          transform: inherit;
+          display: flex;
+          flex-direction: row;
+          gap: 2rem;
+        }
+      }
+    }
+    .hero {
+      &-subtext {
+        font-size: 4.75rem;
+      }
+
+      &-text {
+        font-size: 8.5rem;
+      }
+    }
+  }
+}
+
+@media screen and(min-width:1920px) {
+  header {
+    background-position: center 90%;
+
+    nav {
+      & .container {
+        .links {
+          gap: 6.25rem;
+        }
+      }
+    }
+    .hero {
+      &-subtext {
+        font-size: 6.25rem;
+      }
+
+      &-text {
+        font-size: 12.25rem;
+      }
+      .cta {
+        font-size: 2rem;
+      }
+    }
+  }
+}
